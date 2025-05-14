@@ -1,0 +1,333 @@
+body {
+    background-color: #e0f7fa;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #000000; /* Black text */
+}
+
+#upper {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 95%;
+    flex-wrap: wrap;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: Montserrat, sans-serif;
+}
+
+#topleft {
+    flex: 1;
+    padding: 10px;
+}
+
+.inline-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.inline-container input {
+    width: 20%;
+    margin-left: 15px;
+}
+
+.inline-container label {
+    margin-left: 5px;
+    color: #000000; /* Black text */
+}
+
+#topleft .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 10px;
+}
+
+#topleft .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+#topleft .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    margin-top: 10px;
+    color: #000000; /* Black text */
+}
+
+#topleft .form-grid input[type="text"] {
+    flex: 1;
+    width: calc(50% - 10px);
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.tp-master {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000000; /* Black border */
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    margin-left: 20px;
+}
+
+.tp-master h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #000000; /* Black border */
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000000; /* Black text */
+}
+
+.tp-master .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 10px;
+}
+
+.tp-master .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+.tp-master .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    margin-top: 10px;
+    color: #000000; /* Black text */
+}
+
+.tp-master .form-grid input[type="text"] {
+    flex: 1;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.small-input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.solar {
+    width: calc(50% - 15px);
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    margin-right: 15px;
+}
+
+.solar h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #000000; /* Black border */
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000000; /* Black text */
+}
+
+.solar .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 10px;
+}
+
+.solar .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+.solar .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    margin-top: 10px;
+    color: #000000; /* Black text */
+}
+
+.solar .form-grid input[type="text"] {
+    flex: 1;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.lastdiv {
+    width: calc(50% - 15px);
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+.lastdiv h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #000000; /* Black border */
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000000; /* Black text */
+}
+
+.lastdiv .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 10px;
+}
+
+.lastdiv .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+.lastdiv .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    margin-top: 10px;
+    color: #000000; /* Black text */
+}
+
+.lastdiv .form-grid input[type="text"] {
+    flex: 1;
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.remarks {
+    margin: 10px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+}
+
+.remarks label {
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #000000; /* Black text */
+}
+
+.remarks input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.button-70 {
+    background-color: #0288d1; /* Blue background */
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff; /* White text */
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+@media (max-width: 768px) {
+    #upper {
+        flex-direction: column;
+    }
+
+    #topleft,
+    .tp-master,
+    .solar,
+    .lastdiv {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .tp-master,
+    .solar,
+    .lastdiv {
+        margin-top: 20px;
+    }
+}
+
+.heading {
+    font-family: Montserrat, sans-serif;
+    margin: 10px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 10px;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+.fle {
+    display: flex;
+}
+
+.remarks {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    align-items: center;
+}
+
+.remarks label {
+    white-space: nowrap;
+}
+
+.remarks input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #000000; 
+    border-radius: 5px;
+    width: 90%;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 1px;
+}

@@ -1,0 +1,367 @@
+body {
+    background-color: #f0f4f8; /* Light background for better contrast */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Use a consistent font */
+}
+
+h2 {
+    text-align: center;
+    color: #333333; /* Darker text for better readability */
+    margin: 20px 0;
+}
+
+img {
+    float: left;
+    height: 80px;
+    width: 80px; 
+    margin: 0px;
+}
+
+#upper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 97.5%;
+    flex-wrap: wrap;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd; /* Softer border */
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+#topleft {
+    flex: 1;
+    padding: 20px; /* Increase padding */
+}
+
+.inline-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Increase spacing */
+    gap: 20px; /* More space between items */
+}
+
+.inline-container .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Increase spacing within group */
+}
+
+.inline-container .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-left: 20px;
+}
+
+.inline-container input.small-input {
+    width: 60px; /* Slightly larger input */
+    padding: 8px; /* Increase padding */
+    border: 1px solid #ddd; /* Softer border */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition */
+}
+
+.inline-container input.small-input:focus {
+    border-color: #0288d1; /* Highlight on focus */
+}
+
+#topleft .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 15px; /* Increase grid gap */
+}
+
+#topleft .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+#topleft .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #333333;
+    font-weight: bold; /* Bold labels */
+}
+
+#topleft .form-grid input[type="text"] {
+    flex: 1;
+    align-self: right;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#topleft .form-grid input[type="text"]:focus {
+    border-color: #0288d1;
+}
+
+.tp-master {
+    flex: 1;
+    padding: 20px; /* Increase padding */
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.tp-master h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+}
+
+.tp-master .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 15px;
+}
+
+.tp-master .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+.tp-master .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #333333;
+    font-weight: bold;
+}
+
+.tp-master .form-grid input[type="text"] {
+    flex: 1;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.tp-master .form-grid input[type="text"]:focus {
+    border-color: #0288d1;
+}
+
+.small-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.solar, .lastdiv {
+    margin-left: 20px;
+    width: calc(50% - 15px);
+    flex: 1;
+    padding: 20px; /* Increase padding */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+.solar h3, .lastdiv h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+}
+
+.solar .form-grid, .lastdiv .form-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 15px;
+}
+
+.solar .form-grid div, .lastdiv .form-grid div {
+    display: flex;
+    align-items: center;
+}
+
+.solar .form-grid label, .lastdiv .form-grid label {
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #333333;
+    font-weight: bold;
+}
+
+.solar .form-grid input[type="text"], .lastdiv .form-grid input[type="text"] {
+    flex: 1;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.solar .form-grid input[type="text"]:focus, .lastdiv .form-grid input[type="text"]:focus {
+    border-color: #0288d1;
+}
+
+.remarks {
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px; /* Increase padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.remarks label {
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #333333;
+    font-weight: bold;
+}
+
+.remarks input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.remarks input[type="text"]:focus {
+    border-color: #0288d1;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align buttons */
+    padding: 10px 0;
+}
+
+.button-70 {
+    background-color: #0288d1;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, .2) 0 5px 15px; /* Softer shadow */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em; /* Slightly larger font size */
+    margin: 0 10px; /* Add margin between buttons */
+    padding: 10px 20px; /* Increase padding */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-70:hover {
+    background-color: #026aa7;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Center align heading */
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    padding: 20px;
+    width: 95%;
+}
+
+@media (max-width: 768px) {
+    #upper {
+        flex-direction: column;
+    }
+
+    #topleft,
+    .tp-master,
+    .solar,
+    .lastdiv {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .tp-master,
+    .solar,
+    .lastdiv {
+        margin-top: 20px;
+    }
+}
+
+.fle {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements in smaller screens */
+    gap: 20px; /* Add gap between items */
+}
+
+.remarks {
+    width: 100%;
+    padding: 20px;
+    display: block;
+    align-items: center;
+}
+
+.remarks label {
+    white-space: nowrap;
+}
+
+.remarks input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px; /* Increase padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+    .form-header,
+    .form-content,
+    .form-footer {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .form-header,
+    .form-content,
+    .form-footer,
+    .form-grid div {
+        flex-direction: column;
+    }
+
+    .form-grid input[type="text"],
+    .remarks input[type="text"],
+    .button-70 {
+        width: 100%;
+    }
+}
